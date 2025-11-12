@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Itzmin Rodríguez</title>
+  <style>
+    /* ====== Estilos globales ====== */
+    body {
+      margin: 0;
+      font-family: "Arial", sans-serif;
+      background: linear-gradient(to bottom, #000000 0%, #3c3c3c 65%, #ffffff 100%);
+      color: #dadada;
+      min-height: 100vh;
+    }
+
+    /* ====== Encabezado superior ====== */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      background: transparent;
+      color: #ffffff;
+    }
+
+    /* ====== Sección principal ====== */
+    main {
+      flex: 1;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    main h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    main h2 {
+      font-size: 1.2rem;
+      font-weight: normal;
+      color: #ffffff;
+      margin-top: 0;
+      margin-bottom: 3rem;
+    }
+
+    /* ====== Contenedor de tarjetas ====== */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 250px);
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .tarjeta {
+      width: 250px;
+      height: 350px;
+      background-color: #f3f3f3;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .tarjeta:hover {
+      background-color: #000;
+      color: #fff;
+      transform: translateY(-5px);
+    }
+
+    /* ====== Pie de página ====== */
+    footer {
+      margin-top: 15rem;  
+      text-align: center;
+      font-size: 1rem;
+      padding: 1rem;
+      border-top: 1px solid #000;
+      color: #000000;
+    }
+
+    /* ====== Espaciado adicional ====== */
+    @media (min-width: 900px) {
+      .grid {
+        grid-template-columns: repeat(4, 250px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span>Itzmin González Rodríguez</span>
+    <span>Instituto Tecnológico de Tepic</span>
+  </header>
+
+  <main>
+    <h1>Portafolio</h1>
+    <h2>Electrónica Analógica</h2>
+
+    <div class="grid">
+      <a href="ResumenLibro.pdf" class="tarjeta" target="_blank">Resumen Libro</a>
+      <a href="Practica_SensorCrepuscular.pdf" class="tarjeta" target="_blank">Sensor Crepuscular</a>
+      <a href="Practica_SensorDeImpacto.pdf" class="tarjeta" target="_blank">Sensor de Impacto</a>
+      <a href="Practica_SensorDeSonido.pdf" class="tarjeta" target="_blank">Sensor de Sonido</a>
+      <a href="Practica_SensorDeTemperatura.pdf" class="tarjeta" target="_blank">Sensor de Temperatura</a>
+      <a href="Practica_SensorMagnetico.pdf" class="tarjeta" target="_blank">Sensor Magnético</a>
+      <a href="Practica1_TransistorInterruptor.pdf" class="tarjeta" target="_blank">Transistor Interruptor</a>
+      <a href="SensorDetectorCrucePorCero.pdf" class="tarjeta" target="_blank">Detector de Cruce Por Cero</a>
+      <a href="SensorDetectorObstaculos.pdf" class="tarjeta" target="_blank">Detector de Obstáculos</a>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Itzmin Rodríguez | Ingeniería en Mecatrónica
+  </footer>
+
+</body>
+</html>
